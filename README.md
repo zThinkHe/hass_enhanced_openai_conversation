@@ -1,5 +1,6 @@
 # Enhanced openai_conversation for Home Assistant
-This is an enhanced version of the openai_conversation component for Home Assistant. After replacing the original version, you can freely add model APIs.
+This is an enhanced version of the openai_conversation component for Home Assistant. 
+After replacing the original version, when adding a service, you can input the base_url freely, which is the API endpoint for your desired AI large model.
 
 How to use?
 
