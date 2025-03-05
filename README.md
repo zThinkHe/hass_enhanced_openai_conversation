@@ -11,8 +11,11 @@ How to use?
 
 For docker:
 1. delete the old one:
+   a. enter into the docker:
+
+   docker exec -it <Docker's name or ID> bash
    
-docker rm  home-assistant:/usr/src/homeassistant/homeassistant/components/testtesttest
+   rm  -rf /usr/src/homeassistant/homeassistant/components/openai_conversation
 
 
 3. copy the new one:
