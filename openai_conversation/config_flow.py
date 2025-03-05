@@ -97,7 +97,7 @@ class OpenAIConfigFlow(ConfigFlow, domain=DOMAIN):
             errors["base"] = "unknown"
         else:
             return self.async_create_entry(
-                title=CONF_SERVICE_NAME,
+                title=user_input[CONF_SERVICE_NAME],
                 data=user_input,
                 options=RECOMMENDED_OPTIONS,
             )
