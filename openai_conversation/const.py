@@ -5,6 +5,7 @@ import logging
 DOMAIN = "openai_conversation"
 LOGGER = logging.getLogger(__package__)
 
+CONF_SERVICE_NAME = "service name"
 CONF_BASE_URL = "base_url"
 CONF_RECOMMENDED = "recommended"
 CONF_PROMPT = "prompt"
