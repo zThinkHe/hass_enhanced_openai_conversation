@@ -18,10 +18,9 @@ For docker:
    rm  -rf /usr/src/homeassistant/homeassistant/components/openai_conversation
 
 
-3. copy the new one:
+3. exit the docker, copy the new one:
    
-docker cp openai_conversation/ home-assistant:/usr/src/homeassistant/homeassistant/components/
+   docker cp openai_conversation/ home-assistant:/usr/src/homeassistant/homeassistant/components/
 
 
-
-5. restart the docker
+4. restart the docker
