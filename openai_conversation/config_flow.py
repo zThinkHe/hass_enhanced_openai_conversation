@@ -29,6 +29,7 @@ from homeassistant.helpers.selector import (
 from homeassistant.helpers.typing import VolDictType
 
 from .const import (
+    CONF_SERVICE_NAME,
     CONF_BASE_URL,
     CONF_CHAT_MODEL,
     CONF_MAX_TOKENS,
@@ -47,6 +48,7 @@ _LOGGER = logging.getLogger(__name__)
 
 STEP_USER_DATA_SCHEMA = vol.Schema(
     {
+        vol.Required(CONF_SERVICE_NAME): str,
         vol.Required(CONF_BASE_URL): str,
         vol.Required(CONF_API_KEY): str,
     }
@@ -95,7 +97,7 @@ class OpenAIConfigFlow(ConfigFlow, domain=DOMAIN):
             errors["base"] = "unknown"
         else:
             return self.async_create_entry(
-                title="ChatGPT",
+                title=CONF_SERVICE_NAME,
                 data=user_input,
                 options=RECOMMENDED_OPTIONS,
             )
