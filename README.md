@@ -11,9 +11,12 @@ How to use?
 
 For docker:
 1. delete the old one:
+   
    a. enter into the docker:
 
    docker exec -it <Docker's name or ID> bash
+
+   b. delete the old one:
    
    rm  -rf /usr/src/homeassistant/homeassistant/components/openai_conversation
 
