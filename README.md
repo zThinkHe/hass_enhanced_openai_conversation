@@ -27,3 +27,6 @@ For docker:
 
 
 4. restart the docker
+
+
+![image](https://github.com/user-attachments/assets/92f20c66-a927-46af-9d3e-5b534c040d73)
